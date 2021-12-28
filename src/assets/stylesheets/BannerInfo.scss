@@ -1,0 +1,44 @@
+/* banner Info */
+.banner-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+
+  & .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-transform: capitalize;
+    min-width: 30%;
+    height: 30vh;
+    background: #606063 url("../img/banner/b7.jpg") no-repeat center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  & .banner-box2 {
+    background-image: url("../img/banner/b4.jpg");
+  }
+
+  & .banner-box3 {
+    background-image: url("../img/banner/b18.jpg");
+  }
+
+  & h2 {
+    color: #fff2e5;
+    font-weight: 900;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: #ef3636;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+}

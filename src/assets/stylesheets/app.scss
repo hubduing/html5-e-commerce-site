@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import './Header';
+@import "./Hero";
+@import "./Features";
+@import "./Product";
+@import "./Banner";
+@import "./SmBanner";
+@import "./BannerInfo";
+@import "./NewsLatter";
+@import "./Footer";
+@import "./Burger";
+@import "./MediaQuery";
+
+:root
+{
+    --color-example: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222222;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222222;
+}
+h4 {
+    font-size: 20px;
+    color: #222222;
+}
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+    color: #456b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+body {
+    width: 100%;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #1a1a1a;
+    background: #cce7d0;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff2e5;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff2e5;
+    outline: none;
+    transition: 0.2s;
+}

@@ -1,0 +1,37 @@
+/* banner */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  height: 40vh;
+  background: #606063 url("../img/banner/b2.jpg") no-repeat center;
+  background-size: cover;
+
+  & p,
+  & h2,
+  & h4 {
+    color: #cce7d0;
+  }
+
+  & h2 {
+    font-size: 30px;
+    padding: 10px 0;
+
+    & span {
+      color: #ef3636;
+    }
+  }
+
+  & h4 {
+    font-size: 16px;
+  }
+
+  & button:hover {
+    background: #088178;
+    color: #cce7d0;
+  }
+}
