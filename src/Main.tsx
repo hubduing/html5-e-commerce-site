@@ -20,9 +20,9 @@ export const Main = () => {
       <Header/>
       <Hero/>
       <Features/>
-      <Product/>
+      <Product prod={0} table={"producs/"}/>
       <Banner/>
-      <Product/>
+      <Product prod={1} table={"producs/"}/>
       <SmBanner/>
       <BannerInfo/>
       <NewsLatter/>

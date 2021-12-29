@@ -14,7 +14,7 @@ Get up and running with these simple steps:
 1. Clone the project
 2. Run `npm install`
 3. Run `npm run dev`
-
+4. localhost:3000
 
 ## Class & Functional stubs
 In the `master` branch you can find the class based starter. In the branch `functional` you can find the functional based starter.
