@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-interface DataResponse {
+export interface DataResponse {
   imgSource: string;
   brand: string;
   price: number;

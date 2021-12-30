@@ -1,33 +1,43 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-export const Features = () => {
+interface FeaturesReponse {
+  imgSource: string;
+  title: string
+}
+// @ts-ignore
+export function Features (props) {
+
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // next code refactoring!!! Dublicate product!
+  let [data, setData] = useState([])
+
+  useEffect(() => {
+    getData(props.table);
+  }, [props.table])
+
+  const urlFetch = 'https://react-e-commerce-51a58-default-rtdb.firebaseio.com/';
+  const getData = (table: string) => {
+    fetch(urlFetch + table + '.json')
+      .then(response => response.json())
+      .then((responseToJson) => {
+        setData(data.concat(responseToJson));
+      })
+      .catch(err => console.log(err))
+  }
+  // REFACTORING UP CODE!!!
+  // HAPPY NEW YEAR!
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   return (
     <>
       <section className="features section-p1">
-        <div className="fe-box">
-          <img src="./img/features/f1.png" alt="features"/>
-            <h6>Free Shopping</h6>
-        </div>
-        <div className="fe-box">
-          <img src="./img/features/f2.png" alt="features"/>
-            <h6>Online Order</h6>
-        </div>
-        <div className="fe-box">
-          <img src="./img/features/f3.png" alt="features"/>
-            <h6>Safe Money</h6>
-        </div>
-        <div className="fe-box">
-          <img src="./img/features/f4.png" alt="features"/>
-            <h6>Promotions</h6>
-        </div>
-        <div className="fe-box">
-          <img src="./img/features/f5.png" alt="features"/>
-            <h6>Happy Sell</h6>
-        </div>
-        <div className="fe-box">
-          <img src="./img/features/f6.png" alt="features"/>
-            <h6>F24/7 Support</h6>
-        </div>
+        {data.map((item: FeaturesReponse, index: number) => {
+          return(
+            <div className="fe-box" key={index}>
+              <img src={item.imgSource} alt="features"/>
+              <h6>{item.title}</h6>
+            </div>
+          )
+        })}
       </section>
     </>
   )

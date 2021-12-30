@@ -10,16 +10,12 @@ import { BannerInfo } from './components/BannerInfo';
 import { NewsLatter } from './components/NewsLatter';
 import { Footer } from './components/Footer';
 
-export interface MainProps {
-  app: App;
-}
-
 export const Main = () => {
   return (
     <>
       <Header/>
       <Hero/>
-      <Features/>
+      <Features table={"features/"}/>
       <Product prod={0} table={"producs/"}/>
       <Banner/>
       <Product prod={1} table={"producs/"}/>
