@@ -11,7 +11,7 @@ export const Blog = () => {
     "./img/blog/blog3.jpg",
     "./img/blog/blog4.jpg",
   ]
-
+  //@ts-ignore
   return (
     <>
       <PageHeader

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // @ts-ignore
-export const BlogBox = ({source}: string[]) => {
+export const BlogBox = ({source}: any) => {
   return (
     <>
       <section className="blog">
