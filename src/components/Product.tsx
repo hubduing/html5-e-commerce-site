@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+// import {getData} from './fetch';
 
 export interface DataResponse {
   imgSource: string;
@@ -6,32 +7,35 @@ export interface DataResponse {
   price: number;
   star: number;
 }
+interface Prop {
+  prod: number,
+  table: string
+}
 
-// @ts-ignore
-export function Product (props) {
-  let [data, setData] = useState([])
 
-  useEffect(() => {
-    getData(props.prod, props.table);
-  }, [props.prod])
-
+export function Product ({prod, table}: Prop) {
+  let [data, setData] = useState([]);
   const urlFetch = 'https://react-e-commerce-51a58-default-rtdb.firebaseio.com/';
+
   const getData = (n: number, table: string) => {
     fetch(urlFetch + table + n + '.json')
       .then(response => response.json())
       .then((responseToJson) => {
         setData(data.concat(responseToJson));
       })
-      .catch(err => console.log(err))
-  }
+      .catch(err => console.log(err));
+  };
+  useEffect(() => {
+    getData(prod, table);
+  }, [prod])
+
+
   return (
     <>
       <section className="product section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer collaction new morden design</p>
         <div className="pro-container">
 
-         {data.map((item: DataResponse, index: number) => {
+          {data.map((item: DataResponse, index: number) => {
             return(
               <div className="pro" key={index}>
                 <img src={item.imgSource} alt=""/>
@@ -52,7 +56,7 @@ export function Product (props) {
             )
           })}
 
-       </div>
+        </div>
       </section>
     </>
   );

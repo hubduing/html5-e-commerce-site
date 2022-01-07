@@ -11,7 +11,8 @@ export const Header = () => {
         <div>
           <ul className={open ? 'navbar active' : 'navbar'}>
             <li>
-              <a className="active">
+              {/* <a className="active"> */}
+              <a >
                 <Link to="/">Home</Link>
               </a>
             </li>

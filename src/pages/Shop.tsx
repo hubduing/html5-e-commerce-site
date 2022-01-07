@@ -1,20 +1,25 @@
 import React from 'react';
-import { App } from '../App';
-import { Header } from '../components/Header';
-import { Hero } from '../components/Hero';
-import { Features } from '../components/Features';
 import { Product } from '../components/Product';
-import { Banner } from '../components/Banner';
-import { SmBanner } from '../components/SmBanner';
-import { BannerInfo } from '../components/BannerInfo';
 import { NewsLatter } from '../components/NewsLatter';
 import { Footer } from '../components/Footer';
+import { PageHeader } from '../components/PageHeader';
+import { Pagination } from '../components/Pagination';
 
 export const Shop = () => {
   return (
     <>
-      <Product prod={0} table={"producs/"}/>
-      <Product prod={1} table={"producs/"}/>
+      <PageHeader 
+        classSection='page-header'
+          title="#stayhome" 
+          detail="Save more with coupons & up to 70% off!" 
+        />
+      <section className="product section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer collection new modern design</p>
+        <Product prod={0} table={"producs/"}/>
+        <Product prod={1} table={"producs/"}/>
+      </section>
+      <Pagination/>
       <NewsLatter/>
       <Footer/>
     </>

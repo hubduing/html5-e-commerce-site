@@ -10,10 +10,12 @@
 @import "./NewsLatter";
 @import "./Footer";
 @import "./Burger";
-@import "./MediaQuery";
 
 @import "./Pagination";
-@import "./PageShop";
+@import "./PageHeader.scss";
+
+@import "./BlogBox.scss";
+@import "./MediaQuery";
 
 :root
 {

@@ -1,4 +1,3 @@
-/* Media query */
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -86,6 +85,24 @@
   .news-latter .form {
     width: 70%;
   }
+  .blog {
+    padding: 100px 20px 0 20px;
+
+    & .blog-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    & .blog-img {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+
+    & .blog-details {
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 475px) {
   .section-p1 {
@@ -138,8 +155,5 @@
     & .form {
       width: 100%;
     }
-  }
-  .footer .copyright {
-    text-align: start;
   }
 }
