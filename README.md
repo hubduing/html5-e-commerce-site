@@ -13,7 +13,7 @@ A project for using React, TypeScript, SCSS, firebase, fetch and Webpack.
 
 Get up and running with these simple steps:
 
-1. Clone the project: git clone https://github.com/hubduing/html5-e-commerce-site.git
+1. Clone the project: `git clone https://github.com/hubduing/html5-e-commerce-site.git`
 2. Run `yarn`
 3. git checkout react
 4. Run `yarn dev`
