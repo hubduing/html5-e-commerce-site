@@ -1,0 +1,50 @@
+/* sm banner */
+
+.sm-banner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  & .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-transform: capitalize;
+    min-width: 580px;
+    height: 50vh;
+    /*background-image: url("../img/banner/b17.jpg");*/
+    background: #606063 url("../img/banner17.jpg") no-repeat center;
+    background-size: cover;
+    padding: 30px;
+    margin-bottom: 5px;
+
+    &:hover button {
+      background: #088178;
+      border: 1px solid #088178;
+    }
+  }
+
+  & .banner-box2 {
+    background-image: url("../img/banner10.jpg");
+  }
+
+  & h4 {
+    color: #fff2e5;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  & h2 {
+    color: #fff2e5;
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  & span {
+    color: #fff2e5;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+}
