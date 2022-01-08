@@ -5,7 +5,7 @@ const outputConfig = {
 // Entry points
 // https://webpack.js.org/concepts/entry-points/ 
 const entryConfig = [
-    "./src/App.ts",
+    "./src/App.tsx",
     "./src/assets/stylesheets/app.scss",
 ];
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Link } from "react-router-dom";
+import {Link, Outlet } from "react-router-dom";
 
 export const Header = () => {
 
@@ -7,12 +7,12 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <a href="#"><img src="./img/logo.png" alt="logo"/></a>
+        <a ><Link to="/"><img src="./img/logo.png" alt="logo"/></Link></a>
         <div>
           <ul className={open ? 'navbar active' : 'navbar'}>
             <li>
               {/* <a className="active"> */}
-              <a >
+              <a className="active">
                 <Link to="/">Home</Link>
               </a>
             </li>
@@ -26,8 +26,16 @@ export const Header = () => {
                 <Link to="/blog">Blog</Link>
               </a>
             </li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a>
+                <Link to="/about">About us</Link>
+              </a>
+            </li>
+            <li>
+              <a>
+                <Link to="/contact">Contact</Link>
+              </a>
+            </li>
             <li className="lg-bar"><a href=""><i className="fas fa-shopping-cart"/></a></li>
             <div onClick={() => setOpen(!open)} className="close"><i className="far fa-times"/></div>
           </ul>
@@ -37,6 +45,7 @@ export const Header = () => {
           <i onClick={() => setOpen(!open)} className="bar fas fa-outdent"/>
         </div>
       </header>
+      <Outlet />
     </>
   );
 };
