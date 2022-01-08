@@ -85,3 +85,39 @@ button.white {
     outline: none;
     transition: 0.2s;
 }
+
+.welcome {
+    display: flex;
+    height: calc(100vh - 85px);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, #d432d8,#ff608d,#f4a582);
+    background: linear-gradient(45deg, #d432d8,#ff608d,#f4a582);
+    z-index: 999;
+
+    & h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    & p {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    & button {
+        font-size: 40px;
+        background: inherit;
+        border-radius: 10px;
+        
+        & a,
+        & span {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #0d605a;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 // import {getData} from './fetch';
+import { URLFETCH } from './fetch'
 
 export interface DataResponse {
   imgSource: string;
@@ -15,10 +16,9 @@ interface Prop {
 
 export function Product ({prod, table}: Prop) {
   let [data, setData] = useState([]);
-  const urlFetch = 'https://react-e-commerce-51a58-default-rtdb.firebaseio.com/';
 
   const getData = (n: number, table: string) => {
-    fetch(urlFetch + table + n + '.json')
+    fetch(URLFETCH + table + n + '.json')
       .then(response => response.json())
       .then((responseToJson) => {
         setData(data.concat(responseToJson));

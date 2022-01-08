@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {URLFETCH} from './fetch';
 
 interface FeaturesReponse {
   imgSource: string;
@@ -14,9 +15,8 @@ export const Features = ({table}) => {
     getData(table);
   }, [table])
 
-  const urlFetch = 'https://react-e-commerce-51a58-default-rtdb.firebaseio.com/';
   const getData = (table: string) => {
-    fetch(urlFetch + table + '.json')
+    fetch(URLFETCH + table + '.json')
       .then(response => response.json())
       .then((responseToJson) => {
         setData(data.concat(responseToJson));
