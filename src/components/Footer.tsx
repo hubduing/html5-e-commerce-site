@@ -41,11 +41,11 @@ export const Footer = () => {
           <h4>Install App</h4>
           <p>From App store or Google Play</p>
           <div className="row">
-            <img src="./img/pay/app.jpg" alt="app"/>
-              <img src="./img/pay/play.jpg" alt="google"/>
+            <img src="./img/app.jpg" alt="app"/>
+              <img src="./img/play.jpg" alt="google"/>
           </div>
           <p>Secured Payment Gateways</p>
-          <img src="./img/pay/pay.png" alt="pay"/>
+          <img src="./img/pay.png" alt="pay"/>
         </div>
 
         <div className="copyright">

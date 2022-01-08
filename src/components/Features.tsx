@@ -4,16 +4,15 @@ interface FeaturesReponse {
   imgSource: string;
   title: string
 }
-// @ts-ignore
-export function Features (props) {
 
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  // next code refactoring!!! Dublicate product!
+// @ts-ignore
+export const Features = ({table}) => {
+
   let [data, setData] = useState([])
 
   useEffect(() => {
-    getData(props.table);
-  }, [props.table])
+    getData(table);
+  }, [table])
 
   const urlFetch = 'https://react-e-commerce-51a58-default-rtdb.firebaseio.com/';
   const getData = (table: string) => {
@@ -24,15 +23,12 @@ export function Features (props) {
       })
       .catch(err => console.log(err))
   }
-  // REFACTORING UP CODE!!!
-  // HAPPY NEW YEAR!
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   return (
     <>
       <section className="features section-p1">
         {data.map((item: FeaturesReponse, index: number) => {
           return(
-            <div className="fe-box" key={index}>
+            <div className="fe-box" key={index.toString()}>
               <img src={item.imgSource} alt="features"/>
               <h6>{item.title}</h6>
             </div>

@@ -26,9 +26,6 @@ export const Header = () => {
                 <Link to="/blog">Blog</Link>
               </a>
             </li>
-            {/*<li><a className="active" href="/">Home</a></li>*/}
-            {/*<li><a href="/shop">Shop</a></li>*/}
-            {/*<li><a href="/blog">Blog</a></li>*/}
             <li><a href="about.html">About us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li className="lg-bar"><a href=""><i className="fas fa-shopping-cart"/></a></li>

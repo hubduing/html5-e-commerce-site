@@ -13,18 +13,18 @@ export const Home = () => {
   return (
     <>
       <Hero/>
-      <Features table={'features/'}/>
-        <section className='product section-p1'>
-          <h2>Featured Products</h2>
-          <p>Summer collaction new morden design</p>
-          <Product prod={0} table={'producs/'}/>
-        </section>
-        <Banner/>
-        <section className='product section-p1'>
-          <h2>New Arrivals</h2>
-          <p>Summer Collaction New Morden Design</p>
-          <Product prod={1} table={'producs/'}/>
-        </section>
+      <Features table='features/'/>
+      <section className='product section-p1'>
+        <h2>Featured Products</h2>
+        <p>Summer collaction new morden design</p>
+        <Product prod={0} table={'producs/'}/>
+      </section>
+      <Banner/>
+      <section className='product section-p1'>
+        <h2>New Arrivals</h2>
+        <p>Summer Collaction New Morden Design</p>
+        <Product prod={1} table={'producs/'}/>
+      </section>
       <SmBanner/>
       <BannerInfo/>
       <NewsLatter/>
