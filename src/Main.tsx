@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Shop } from './pages/Shop';
 import { Blog } from './pages/Blog';
+import {Welcome} from './pages/Welcome';
 
 export const Main = () => {
   return (
@@ -25,12 +26,4 @@ export const Main = () => {
     </>
   );
 };
-function Welcome() {
-  return (
-    <div className="welcome">
-      <h2>Welcome to my site</h2>
-      <p>My name is Alexey and I am a beginner web developer</p>
-      <button className="normal button"><Link to="/"><span>Go to home page</span></Link></button>
-    </div>
-  );
-}
+
