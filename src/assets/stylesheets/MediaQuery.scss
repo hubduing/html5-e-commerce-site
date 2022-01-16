@@ -175,4 +175,20 @@
       width: 100%;
     }
   }
+
+  .about-head {
+    flex-direction: column;
+
+    & img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    & div {
+      padding-left: 0;
+    }
+  }
+  .about-app .video {
+    width: 100%;
+  }
 }

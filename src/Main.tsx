@@ -5,6 +5,8 @@ import { Home } from './pages/Home';
 import { Shop } from './pages/Shop';
 import { Blog } from './pages/Blog';
 import {Welcome} from './pages/Welcome';
+import {About} from "./pages/About";
+import {Footer} from "./components/Footer";
 
 export const Main = () => {
   return (
@@ -14,7 +16,7 @@ export const Main = () => {
           <Route index element={<Home/>}/>
           <Route path="shop" element={<Shop/>}/>
           <Route path="blog" element={<Blog/>}/>
-          <Route path="about" element={<Home/>}/>
+          <Route path="about" element={<About/>}/>
           <Route path="contact" element={<Home/>}/>
 
           {/* Using path="*"" means "match anything", so this route
@@ -23,6 +25,7 @@ export const Main = () => {
           <Route path="*" element={<Welcome/>}/>
         </Route>
       </Routes>
+      <Footer/>
     </>
   );
 };

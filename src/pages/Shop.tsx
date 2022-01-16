@@ -1,7 +1,6 @@
 import React from 'react';
 import { Product } from '../components/Product';
 import { NewsLatter } from '../components/NewsLatter';
-import { Footer } from '../components/Footer';
 import { PageHeader } from '../components/PageHeader';
 import { Pagination } from '../components/Pagination';
 
@@ -21,7 +20,6 @@ export const Shop = () => {
       </section>
       <Pagination/>
       <NewsLatter/>
-      <Footer/>
     </>
   );
 };

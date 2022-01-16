@@ -6,7 +6,6 @@ import { Banner } from '../components/Banner';
 import { SmBanner } from '../components/SmBanner';
 import { BannerInfo } from '../components/BannerInfo';
 import { NewsLatter } from '../components/NewsLatter';
-import { Footer } from '../components/Footer';
 
 
 export const Home = () => {
@@ -28,7 +27,6 @@ export const Home = () => {
       <SmBanner/>
       <BannerInfo/>
       <NewsLatter/>
-      <Footer/>
     </>
   );
 };
