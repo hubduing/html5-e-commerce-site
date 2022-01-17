@@ -1,9 +1,13 @@
 import React from 'react';
 
-export const NewsLatter = () => {
+interface Props {
+  classNews: string
+}
+
+export const NewsLatter = ({classNews}:Props) => {
   return (
     <>
-      <section className="news-latter section-p1 section-m1">
+      <section className={classNews}>
         <div className="news-text">
           <h4>sign up for news letter</h4>
           <p>get e-mail updates about our latest shop and <span>special offers.</span></p>

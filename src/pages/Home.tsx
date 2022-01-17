@@ -26,7 +26,9 @@ export const Home = () => {
       </section>
       <SmBanner/>
       <BannerInfo/>
-      <NewsLatter/>
+      <NewsLatter
+        classNews="news-latter red section-p1 section-m1"
+      />
     </>
   );
 };

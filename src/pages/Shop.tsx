@@ -19,7 +19,9 @@ export const Shop = () => {
         <Product prod={1} table={"producs/"}/>
       </section>
       <Pagination/>
-      <NewsLatter/>
+      <NewsLatter
+        classNews="news-latter green section-p1 section-m1"
+      />
     </>
   );
 };
