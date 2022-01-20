@@ -1,4 +1,5 @@
 import React from "react";
+import { NewsLatter } from "../components/NewsLatter";
 
 export const About = () => {
   return (
@@ -38,6 +39,9 @@ export const About = () => {
           <video autoPlay muted loop src="./img/about/1.mp4"></video>
         </div>
       </section>
+      <NewsLatter
+        classNews="news-latter blue section-p1 section-m1"
+      />
     </>
 )
 }
