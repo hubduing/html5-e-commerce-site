@@ -122,6 +122,13 @@
       border-radius: 20px;
     }
   }
+  .form-details {
+    padding: 40px;
+
+    & form {
+      width: 50%;
+    }
+  }
 }
 @media (max-width: 475px) {
   .section-p1 {
@@ -190,5 +197,29 @@
   }
   .about-app .video {
     width: 100%;
+  }
+
+  .contact-details {
+    flex-direction: column;
+
+    & details {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    & .map {
+      width: 100%;
+    }
+  }
+
+  .form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+
+    & form {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 }
